@@ -14,8 +14,6 @@ def wrap(s, width = 78)
 end
 
 def jenzzly
-  # This is a live API key, don't absue it
-  # api_key = ENV['OMDBAPI_API_KEY'] || '946f500a'
 
   jenzzly_name = ARGV
 
