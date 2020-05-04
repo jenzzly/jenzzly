@@ -1,0 +1,63 @@
+#!/usr/bin/env ruby
+
+# CLI app that searched stackoverflow and returns answers
+
+require 'json'
+require 'uri'
+require 'net/http'
+require 'colorize'
+require 'nokogiri'
+
+# Word wrapping for consise output
+def wrap(s, width = 78)
+  s.gsub(/(.{1,#{width}})(\s+|\Z)/, "\\1\n| ")
+end
+
+def jenzzly
+
+  jenzzly_name = ARGV
+
+  # Program escape statements
+  if jenzzly_name == 'quit' || jenzzly_name == 'exit'
+    puts
+    exit(1)
+  else
+    uri = URI("https://api.stackexchange.com/2.2/search/advanced?order=desc&sort=votes&closed=True&title=#{jenzzly_name}&site=stackoverflow&filter=!)c7xwvLBb92y1sTQ9ioD*LQcElJ5XYEMDNMSK4YKOaX(m")
+    response = Net::HTTP.get(uri)
+    question = JSON.parse(response)
+  end
+
+  # Exception for invalid response
+  if question['Response'] == 'False'
+    puts
+    puts 'No Question Found'
+    puts
+    exit(1)
+  else
+    # Rescue if no tomato score
+    # Word wrap added to plot and actors
+    begin
+      title = question['items'][0]['title']
+      body = question['items'][0]['body']
+    rescue
+      score = 'No question Found'
+    end
+
+    puts '=================================================='
+    puts "| Title: #{title}".red
+    puts "| Body: ".yellow + Nokogiri::HTML(body)
+    puts '=================================================='
+    question['items'].each do |items|
+      if items['answers']
+          items['answers'].each do |answers|
+            puts "\n"
+            puts "Answer: ".yellow + Nokogiri::HTML(answers['body'])
+            puts "Link: #{answers['link']}".blue
+            puts "---------------------------------------------"
+          end
+        end
+    end
+  end
+end
+
+jenzzly
