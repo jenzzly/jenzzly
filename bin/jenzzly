@@ -51,6 +51,7 @@ def jenzzly
       if items['answers']
           items['answers'].each do |answers|
             puts "\n"
+            puts "Question: #{answers['title']}".red
             puts "Answer: ".yellow + Nokogiri::HTML(answers['body'])
             puts "Link: #{answers['link']}".blue
             puts "---------------------------------------------"
