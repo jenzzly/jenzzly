@@ -10,7 +10,7 @@
 
 - 🤝 I’m looking to help with **Open Source Fun Project**
 
-- 👨‍💻 All of my projects are available at [https://janvier.dev/](https://janvier.dev/)
+- 👨‍💻 All of my projects are available at [https://janvier.dev/](https://janvier.is-a.dev/)
 
 - 📝 I regularly write articles on [https://dev.to/jenzzly/stack-overflow-command-line-search-tool-5fjf](https://dev.to/jenzzly/stack-overflow-command-line-search-tool-5fjf)
 
@@ -18,7 +18,7 @@
 
 - 📫 How to reach me **[Linkedin](https://linkedin.com/in/byjanvier)**
 
-- 📄 Know about my experiences [https://janvier.dev/](https://janvier.dev/)
+- 📄 Know about my experiences [https://janvier.dev/](https://janvier.is-a.dev/)
 
 - ⚡ Fun fact **I can probably win at pool table if we play :)**
 
