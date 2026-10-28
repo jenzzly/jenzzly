@@ -100,7 +100,23 @@ I’m a developer who enjoys building practical, scalable products across the st
 
 ---
 
-## GitHub Activity
+## Featured Work
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Backend-APIs%20%26%20Services-8B5CF6?style=flat-square" />
+  <img src="https://img.shields.io/badge/Frontend-UI%20%26%20UX-22C55E?style=flat-square" />
+  <img src="https://img.shields.io/badge/Cloud-AWS%20%26%20CI%2FCD-0EA5E9?style=flat-square" />
+  <img src="https://img.shields.io/badge/Focus-Product%20Builds-F59E0B?style=flat-square" />
+</p>
+
+- Building practical backend systems with Python, Flask, and API-driven architecture
+- Designing user-friendly frontend experiences with Vue.js and modern web patterns
+- Exploring cloud deployment, automation, and CI/CD workflows with AWS and DevOps tooling
+- Enjoying side projects that combine clean code, product thinking, and real-world problem solving
+
+---
+
+## GitHub Snapshot
 
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jenzzly&show_icons=true&locale=en&layout=compact" alt="Top languages" />
